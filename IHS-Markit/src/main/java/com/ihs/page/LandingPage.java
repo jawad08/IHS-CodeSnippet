@@ -39,7 +39,6 @@ public class LandingPage {
     public void verifyHelloWorld(){
         wait.until(ExpectedConditions.visibilityOf(runButton));
         runButton.click();
-        SoftAssert softAssert = new SoftAssert();
         String outputValue = outputField.getText();
         Assert.assertEquals(actual,outputValue);
     }
@@ -47,7 +46,6 @@ public class LandingPage {
     public void verifyShareLinkAttribute(){
         shareButton.click();
         wait.until(ExpectedConditions.visibilityOf(shareLink));
-        SoftAssert softAssert = new SoftAssert();
         String contentOfShareLink = shareLink.getAttribute("value");
         Assert.assertTrue(contentOfShareLink.startsWith(baseURL));
     }
