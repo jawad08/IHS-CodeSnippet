@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="codeExercise" verbose="1" >
+    <test name="codeExercise" >
+
+        <classes>
+            <class name="com.ihs.Tests.CodeExercise" />
+        </classes>
+    </test>
+</suite>
